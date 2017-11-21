@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skylightdeveloper.grocerryappdemo.activity.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/product_lv_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/checkout_view_id" />
+
+    <RelativeLayout
+        android:id="@+id/checkout_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/prod_count_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="product count 0"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/proceed_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:enabled="false"
+            android:text="Proceed to checkout" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
